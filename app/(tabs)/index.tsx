@@ -67,6 +67,8 @@ export default function TabOneScreen() {
 
     const newImageUri =  "file:///" + uri.split("file:/").join("");
     
+    // this shows error but actually this is how it should be!
+    // idk why typescript is throwing error
     formData.append('video', {
      uri : uri,
      type: mime.getType(newImageUri),
